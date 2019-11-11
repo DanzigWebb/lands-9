@@ -1,0 +1,315 @@
+@import "vars"
+@import "most"
+@import "offer"
+@import "anim"
+
+// ========================>
+// header
+// <=======================
+
+.main
+  background-image: url(../../img/header_bg.jpg)
+  background-size: cover
+  position: relative
+  padding-bottom: 1.2rem
+.main__logo
+  font-size: 0.7rem
+  font-weight: bold
+  line-height: 1
+  color: #fff
+  padding-left: 0.34rem
+  padding-top: 0.15rem
+.main_about
+  position: absolute
+  left: -.5rem
+  top: 3rem
+  transform: rotate(-90deg)
+  color: #fff
+  font-style: italic
+  font-size: 0.2rem
+.price
+  display: flex
+  justify-content: center
+  flex-direction: column
+  height: 0.87rem
+  width: 1.34rem
+  background: #fff
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.35)
+  border-radius: 30px
+  border: 2px solid $accent
+  padding-left: 0.3rem
+  box-sizing: border-box
+  s
+    font-weight: 500
+    font-size: 0.2rem
+    color: #C4C4C4
+    line-height: 0.9
+  span
+    font-weight: bold
+    font-size: 0.43rem
+    color: $accent
+    line-height: 1.1
+.price--main
+  margin-left: 0.9rem
+  margin-top: 0.4rem
+.main__descr
+  margin: 0
+    top: 3rem
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2)
+  color: #fff
+  font-size: 0.27rem
+  font-weight: bold
+  padding-left: 0.6rem
+  padding-right: 0.8rem
+  position: relative
+  display: flex
+  align-items: center
+  &:before
+    content: ''
+    width: 2.08rem
+    height: 2.18rem
+    background-image: url(../../img/main_descr.png)
+    background-size: contain
+    background-repeat: no-repeat
+    display: block
+    position: absolute
+    left: 0.2rem
+    top: -0.3rem
+
+.offer
+  background-color: #fff
+  width: 4.4rem
+  margin: auto
+  border-radius: 20px
+  box-sizing: border-box
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2)
+  padding: .3rem .25rem
+  text-align: center
+  margin-top: -.5rem
+  position: relative
+  z-index: 1
+  overflow: hidden
+  margin-bottom: 0.2rem
+  h3
+    margin: 0
+    color: #881214
+    font-weight: bold
+    font-size: 0.26rem
+    text-transform: uppercase
+  input
+    margin-top: 0.38rem
+    border: 1.14208px solid #8BB14C
+    border-radius: 40px
+    background-color: rgba(255, 255, 255, .6)
+    box-shadow: none
+    font-size: 0.21rem
+    color: #A7A7A7
+    font-weight: normal
+    font-family: 'Gilroy', sans-serif
+  button
+    margin-top: 0.38rem
+.offer__decor
+  position: absolute
+  top: 0.65rem
+  left: -.1rem
+  z-index: -1
+  width: 3.5rem
+  img
+    width: 100%
+.offer__trigger
+  height: 0.5rem
+  border-radius: 40px
+  background: $accent
+  font-size: 0.21rem
+  font-weight: 500
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #fff
+  margin: 0
+    top: 0.38rem
+
+.sect2
+  background-image: url(../../img/block_2_backround.png)
+  background-size: cover
+  background-color: #fff
+  background-position: center bottom
+  padding-bottom: 1rem
+  z-index: 2
+  position: relative
+.sect2__prod
+  width: 2rem
+  margin: .4rem 0
+  position: relative
+  left: 1.05rem
+
+.sect3
+  background-color: #fff
+  margin-top: -0.2rem
+  z-index: 1
+  position: relative
+  padding-bottom: .2rem
+.sect3__quet
+  position: absolute
+  right: 0.4rem
+  bottom: -.7rem
+  color: #B8D285
+  font-weight: 300
+  font-size: 2rem
+  line-height: .7rem
+  font-style: italic
+
+
+.sect4
+  background-image: url(../../img/block_3_backround.png)
+  background-size: cover
+  background-color: #fff
+  padding-top: 1rem
+  position: relative
+  z-index: 1
+  padding-bottom: 0.2rem
+.sect4__content
+  padding-top: 0.3rem
+.sect4__item
+  margin-bottom: 0.4rem
+  &:last-child
+    margin-bottom: 0
+p.sect4__title
+  color: #242424
+  font-weight: 600
+  font-size: 0.25rem
+  line-height: 0.3rem
+  text-align: center
+  margin: 0
+  margin-bottom: .2rem
+p.sect4__txt
+  margin-top: 0.1rem
+  font-size: 0.2rem
+  color: #242424
+  line-height: 0.23rem
+
+.sect5
+  padding-top: .8rem
+  background-image: url(../../img/sect5_bg.png)
+  background-size: cover
+  line-height: 0.23rem
+  color: #000
+  overflow: hidden
+  padding-bottom: 0.9rem
+  position: relative
+  z-index: 1
+.sect5__title
+  display: flex
+  align-items: center
+  img
+    width: 1.88rem
+    flex-shrink: 0
+  p
+    color: #000
+    font-weight: 800
+    font-size: 0.25rem
+    line-height: 0.3rem
+    
+.sect6
+  background-color: #fff
+  margin-top: -0.3rem
+  position: relative
+  padding-top: 0.3rem
+  color: #242424
+  padding-bottom: 0.2rem
+.sect6__list
+  list-style: none
+  margin: 0
+  padding: 0
+  padding-bottom: 0.3rem
+.sect6__item
+  padding-left: 0.3rem
+  position: relative
+  margin-bottom: 0.2rem
+  color: #000
+  &:last-child
+    margin-bottom: 0
+  &:before
+    content: ''
+    width: 0.2rem
+    height: 0.2rem
+    background-image: url(../../img/list.svg)
+    background-size: contain
+    background-repeat: no-repeat
+    position: absolute
+    left: 0
+    top: .05rem
+
+.sect7
+  background-size: cover
+  background-repeat: no-repeat
+  background-color: $light
+  padding-top: 0
+  position: relative
+  padding-bottom: 0
+.sect7__decor
+  position: absolute
+  left: 0
+  right: 0
+  height: 1.36rem
+  top: 2.9rem
+.slide__header
+  display: flex
+  align-items: center
+  flex-direction: column
+  margin-bottom: 0.22rem
+  img
+    width: 1.53rem
+    margin: auto
+    text-align: center
+    margin-bottom: 0.15rem
+  .name
+    color: #000
+    font-weight: 600
+    font-size: 0.28rem
+.slide-content
+  color: #000
+.pagination-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-top: 0.1rem
+  padding-bottom: 0.3rem
+.reviews__pag
+  .swiper-pagination-bullet
+    border-radius: 0.1rem
+    background: #fff
+    height: 0.07rem
+    width: 0.24rem
+    opacity: 1
+    margin: 0 .03rem
+    &-active
+      background: #8BB14C
+.sect7__top
+  background-image: url(../../img/reviews__top.png)
+  background-size: cover
+  background-color: #fff
+  height: 0.9rem
+  width: 100%
+.sect7__bot
+  background-image: url(../../img/reviews__bot.png)
+  background-size: cover
+  background-color: #fff
+  height: 0.74rem
+  width: 100%
+
+.sect8
+  background-color: #fff
+  padding-bottom: 0.2rem
+.sect8__item
+  display: flex
+  align-items: center
+  margin-bottom: 0.2rem
+  &:last-child
+    margin-bottom: 0
+  img
+    flex-shrink: 0
+    width: 0.98rem
+    margin-right: 0.1rem
+  p
+    margin: 0
